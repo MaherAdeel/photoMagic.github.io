@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#ADEFD1FF;
+
+}
+
+
+.cointaner{
+    position: relative;
+    background-color:#00203FFF;
+
+
+}
+.box{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 10rem;
+    
+}
+.imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+
+}
+.box:hover .imgbox{
+    transform: translate(-1.5rem, -1.5rem);
+}
+.box:hover .content {
+    transform: translate(2.5rem, 2.5rem);
+}
+.imgbox img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+    border-radius: 30px;
+}
+.content{
+    background-color: bisque;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 30px;
+    font-family:'Outfit', sans-serif ;
+}
+.rrr{
+    font-size: 15px;
+    color: rgb(188, 26, 61);
+}
+
+
+
+@media only screen and (max-width: 375px){
+    body{
+    background-color:#00203FFF ;
+    }
+    
+    .cointaner{
+        margin-top: 1.5rem;
+
+        
+    }
+    .imgbox img{
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        width: 10rem;
+        height: 10rem;
+        margin: 5rem;
+        margin-top: 10rem;
+
+    }
+    .content{
+        width: 10rem;
+        height: 10rem;
+
+
+
+        
+    }
+
+    
+}
+@media only screen and (max-width: 425px){
+body{
+    background-color:#00203FFF ;
+
+}
+    .box{
+    margin: 5rem;
+    width: 12rem;
+    height: 12rem;
+
+}
+.imgbox img{
+    width: 12rem;
+    height: 12rem;
+
+}
+.content{
+    width: 12rem;
+    height: 12rem;
+  
+}
+.cointaner{
+    margin-top: 5rem;
+}
+
+
+
+
+}
